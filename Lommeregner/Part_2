@@ -1,0 +1,38 @@
+namespace CalcProject;
+
+public static class Matematik
+{
+    public static double Resultat { get; set; }
+
+    // Plus
+    public static void Plus(int a, int b)
+    {
+        Resultat = a + b;
+    }
+
+    // Minus
+    public static void Minus(int a, int b)
+    {
+        Resultat = a - b;
+    }
+
+    // Gange
+    public static void Gange(int a, int b)
+    {
+        Resultat = a * b;
+    }
+
+    // Divider
+    public static void Divider(int a, int b)
+    {
+        if (b == 0)
+        {
+            Console.WriteLine("Det er ikke muligt at dividere med 0!");
+            Resultat = double.NaN;
+        }
+        else
+        {
+            Resultat = (double)a / b;
+        }
+    }
+}
